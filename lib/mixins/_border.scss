@@ -1,0 +1,49 @@
+/// Border utility mixin
+/// @param {Number} $width [null] - `border-width` property value
+/// @param {String} $style [null] - `border-style` property value
+/// @param {Color} $color [null] - `border-color` property value
+@mixin border($width: null, $style: null, $color: null) {
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}
+
+/// Top border utility mixin
+/// @param {Number} $width [null] - `border-top-width` property value
+/// @param {String} $style [null] - `border-top-style` property value
+/// @param {Color} $color [null] - `border-top-color` property value
+@mixin border-top($width: null, $style: null, $color: null) {
+    border-top-width: $width;
+    border-top-style: $style;
+    border-top-color: $color;
+}
+
+/// Bottom border utility mixin
+/// @param {Number} $width [null] - `border-bottom-width` property value
+/// @param {String} $style [null] - `border-bottom-style` property value
+/// @param {Color} $color [null] - `border-bottom-color` property value
+@mixin border-bottom($width: null, $style: null, $color: null) {
+    border-bottom-width: $width;
+    border-bottom-style: $style;
+    border-bottom-color: $color;
+}
+
+/// Left border utility mixin
+/// @param {Number} $width [null] - `border-left-width` property value
+/// @param {String} $style [null] - `border-left-style` property value
+/// @param {Color} $color [null] - `border-left-color` property value
+@mixin border-left($width: null, $style: null, $color: null) {
+    border-left-width: $width;
+    border-left-style: $style;
+    border-left-color: $color;
+}
+
+/// Right border utility mixin
+/// @param {Number} $width [null] - `border-right-width` property value
+/// @param {String} $style [null] - `border-right-style` property value
+/// @param {Color} $color [null] - `border-right-color` property value
+@mixin border-right($width: null, $style: null, $color: null) {
+    border-right-width: $width;
+    border-right-style: $style;
+    border-right-color: $color;
+}

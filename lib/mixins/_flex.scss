@@ -1,0 +1,37 @@
+/// Flex container utility mixin
+/// @param {String} $direction [column] - `flex-direction` property value
+/// @param {String} $justify [null] - `justify-content` property value
+/// @param {String} $align [null] - `align-items` property value
+/// @param {String} $wrap [null] - `flex-wrap` property value
+@mixin flex($direction: column, $justify: null, $align: null, $wrap: null) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+/// Inline flex container utility mixin
+/// @param {String} $direction [row] - `flex-direction` property value
+/// @param {String} $justify [null] - `justify-content` property value
+/// @param {String} $align [null] - `align-items` property value
+/// @param {String} $wrap [null] - `flex-wrap` property value
+@mixin inline-flex($direction: row, $justify: null, $align: null, $wrap: null) {
+    display: inline-flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+/// Flex item utility mixin (for children of a flex container)
+/// @param {Number} $grow [null] - `flex-grow` property value
+/// @param {Number} $shrink [null] - `flex-shrink` property value
+/// @param {Number} $basis [null] - `flex-basis` property value
+/// @param {String} $align [null] - `align-self` property value
+@mixin flex-item($grow: null, $shrink: null, $basis: null, $align: null) {
+    flex-grow: $grow;
+    flex-shrink: $shrink;
+    flex-basis: $basis;
+    align-self: $align;
+}

@@ -1,0 +1,27 @@
+/// Top border-radius utility mixin
+/// @param {Number} $radius - border-radius value
+@mixin border-radius-top($radius) {
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+}
+
+/// Bottom border-radius utility mixin
+/// @param {Number} $radius - border-radius value
+@mixin border-radius-bottom($radius) {
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
+/// Left border-radius utility mixin
+/// @param {Number} $radius - border-radius value
+@mixin border-radius-left($radius) {
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+}
+
+/// Right border-radius utility mixin
+/// @param {Number} $radius - border-radius value
+@mixin border-radius-right($radius) {
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+}

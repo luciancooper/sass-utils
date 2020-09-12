@@ -1,0 +1,31 @@
+/// Positioning utility mixin
+/// @param {String} $position [null] - `position` property value
+/// @param {Number} $left [null] - `left` property value
+/// @param {Number} $right [null] - `right` property value
+/// @param {Number} $top [null] - `top` property value
+/// @param {Number} $bottom [null] - `bottom` property value
+@mixin position($position: null, $left: null, $right: null, $top: null, $bottom: null) {
+    position: $position;
+    left: $left;
+    right: $right;
+    top: $top;
+    bottom: $bottom;
+}
+
+/// Absolute positioning utility mixin
+/// @param {Number} $left [null] - `left` property value
+/// @param {Number} $right [null] - `right` property value
+/// @param {Number} $top [null] - `top` property value
+/// @param {Number} $bottom [null] - `bottom` property value
+@mixin absolute($left: null, $right: null, $top: null, $bottom: null) {
+    @include position(absolute, $left, $right, $top, $bottom);
+}
+
+/// Fixed positioning utility mixin
+/// @param {Number} $left [null] - `left` property value
+/// @param {Number} $right [null] - `right` property value
+/// @param {Number} $top [null] - `top` property value
+/// @param {Number} $bottom [null] - `bottom` property value
+@mixin fixed($left: null, $right: null, $top: null, $bottom: null) {
+    @include position(fixed, $left, $right, $top, $bottom);
+}

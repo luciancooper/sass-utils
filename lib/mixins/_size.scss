@@ -1,0 +1,7 @@
+/// Element size utility mixin
+/// @param {Number} $width - `width` property value
+/// @param {Number} $height [$width] - `height` property value
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}

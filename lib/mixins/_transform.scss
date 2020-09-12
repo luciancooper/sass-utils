@@ -1,0 +1,9 @@
+/// Transform utility mixin
+/// @param {String} $transform [null] - `transform` property value
+/// @param {String} $origin [null] - `transform-origin` property value
+/// @param {String} $style [null] - `transform-style` property value
+@mixin transform($transform: null, $origin: null, $style: null) {
+    transform: $transform;
+    transform-origin: $origin;
+    transform-style: $style;
+}

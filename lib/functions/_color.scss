@@ -1,0 +1,30 @@
+/// Lighten a color by mixing it with white
+/// @param {Color} $color - color to tint
+/// @param {Number} $pct - percentage of `$color` in returned color
+/// @returns {Color} Lightened color
+@function tint($color, $pct) {
+    @return mix(#ffffff, $color, $pct);
+}
+
+/// Darken a color by mixing it with black
+/// @param {Color} $color - color to shade
+/// @param {Number} $pct - percentage of `$color` in returned color
+/// @returns {Color} Darkened color
+@function shade($color, $pct) {
+    @return mix(#000000, $color, $pct);
+}
+
+/// Function for picking color contrast using the YIQ color space
+/// @param {Color} $base - Base color
+/// @param {Number} $threshold [150] - yiq lightness that indicates change from dark to light, must be between 0 and 255.
+/// @param {Color} $dark [#000000] - Dark contrast color
+/// @param {Color} $light [#ffffff] - Light contrast color
+/// @returns {Color} the color with the most contrast with `$base`.
+@function color-contrast($base, $threshold: 150, $dark: #000000, $light: #ffffff) {
+    $yiq: ((red($base) * 299) + (green($base) * 587) + (blue($base) * 114)) / 1000;
+    @if $yiq >= $threshold {
+        @return $dark;
+    } @else {
+        @return $light;
+    }
+}

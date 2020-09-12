@@ -1,0 +1,11 @@
+/// Strip the unit from a number
+/// @param {Number} $number - Number to strip unit from
+/// @returns {Number} - Unitless number
+@function strip-unit($number) {
+    @if type-of($number) == 'number' {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @warn 'Cannot strip unit, #{$number} is not a number';
+    @return $number;
+}
