@@ -1,0 +1,55 @@
+{
+  "name": "@lcooper/sass-utils",
+  "version": "1.0.0",
+  "description": "A collection of sass utility functions and mixins",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.scss",
+  "files": [
+    "index.scss"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luciancooper/sass-utils.git"
+  },
+  "keywords": [
+    "sass",
+    "mixins",
+    "scss"
+  ],
+  "author": "Lucian Cooper <cooperlucian@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luciancooper/sass-utils/issues"
+  },
+  "homepage": "https://github.com/luciancooper/sass-utils#readme",
+  "stylelint": {
+    "extends": "@lcooper/stylelint-config-scss"
+  },
+  "commitlint": {
+    "extends": "@lcooper"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.scss": [
+      "stylelint"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@lcooper/commitlint-config": "^1.1.0",
+    "@lcooper/stylelint-config-scss": "^1.0.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "stylelint": "^13.7.1"
+  }
+}
