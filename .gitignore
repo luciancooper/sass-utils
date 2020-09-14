@@ -28,3 +28,6 @@ logs
 
 # Output of 'npm pack'
 *.tgz
+
+# Directory for compiled docs
+docs
