@@ -5,7 +5,7 @@
 
 A lightweight collection of [Sass](http://sass-lang.com/) utility functions and mixins.
 
-Full documentation can be found [here](https://lucianccooper.github.io/sass-utils).
+Full documentation can be found [here](https://luciancooper.github.io/sass-utils/).
 
 ## Installation
 
