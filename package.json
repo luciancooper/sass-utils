@@ -15,7 +15,8 @@
   },
   "scripts": {
     "docs": "node scripts/docs.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "npm run docs",
+    "deploy": "node scripts/deploy.js"
   },
   "repository": {
     "type": "git",
