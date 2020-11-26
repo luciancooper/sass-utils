@@ -5,3 +5,19 @@
     width: $width;
     height: $height;
 }
+
+/// Element max size utility mixin
+/// @param {Number} $width - `max-width` property value
+/// @param {Number} $height [$width] - `max-height` property value
+@mixin max-size($width, $height: $width) {
+    max-width: $width;
+    max-height: $height;
+}
+
+/// Element min size utility mixin
+/// @param {Number} $width - `min-width` property value
+/// @param {Number} $height [$width] - `min-height` property value
+@mixin min-size($width, $height: $width) {
+    min-width: $width;
+    min-height: $height;
+}
