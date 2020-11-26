@@ -1,6 +1,6 @@
 {
   "name": "@lcooper/sass-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of sass utility functions and mixins",
   "publishConfig": {
     "access": "public"
